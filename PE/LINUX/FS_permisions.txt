@@ -1,0 +1,16 @@
+find / -type f \
+\( \
+\( - user www-data -perm -u=w \) -or \
+\(-group www-data -perm -g=w \) \
+\) \
+-print > out.log 2> /dev/null
+
+
+
+find / -type f (( - user tech -perm -u=w \) -or (-group www-data -perm -g=w \) ) -print > out.log 2>/dev/null
+
+
+
+cat out.log | wc -l 	#count number of lines in file
+
+sed -i '/wordpress/d' out.log 	#delete lines wich contain word "wordpress"

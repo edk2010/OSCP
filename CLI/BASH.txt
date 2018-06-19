@@ -1,0 +1,22 @@
+updatedb	### update file locarion for "locate" command
+chmode 755 script.sh 	### give execut permisions to file
+& 	# run command in background mode 
+
+cut -d"{delimiter}" -f{1}  #### 
+-d, --delimiter=DELIM   use DELIM instead of TAB for field delimiter
+ 	 -f, --fields=LIST       select only these fields;  also print any line
+
+
+host www.cisco.com
+
+=============FOR=======================
+for url in $(cat cisco.txt);do
+host $url | grep "has address" | cut -d " " -f4
+done
+======================================
+
+
+
+
+
+

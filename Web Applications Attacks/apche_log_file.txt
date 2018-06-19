@@ -1,0 +1,9 @@
+RHEL / Red Hat / CentOS / Fedora Linux Apache access file location –
+
+/var/log/httpd/access_log
+Debian / Ubuntu Linux Apache access log file location –
+
+/var/log/apache2/access.log
+FreeBSD Apache access log file location –
+
+ /var/log/httpd-access.log

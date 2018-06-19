@@ -1,0 +1,4 @@
+gcc -m32 -Wl,--hash-style=both -o exploit exploit.c     ; for linux target
+
+i686-w64-mingw32-gcc pe.c -lws2_32 -o pe.exe
+wine pe.exe

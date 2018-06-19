@@ -1,0 +1,1 @@
+icacls filename.exe

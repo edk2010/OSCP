@@ -1,0 +1,16 @@
+nmap -sT x.x.x.x -p- : scan all tcp port
+nmap -sU x.x.x.x -p- : scan all udp port
+nmap x.x.x.x -O -sS -sV -v
+
+nmap -n -sT -sV -v -p- x.x.x.x
+nmap -n -sU -sV -v -p- x.x.x.x
+
+
+nmap -sT x.x.x.x -p80 -sV 	#banner grabbing , help identify services on specific ports
+
+nmap -sT 10.11.1.5 -p135,139,445,1025,3389 --script smb-vuln-ms08-067.nse  	#Nmap Scripting Engine (NSE)
+nmap -sT 10.11.1.5 -p135,139,445,1025,3389 --script all 						#run all relivanted scripts
+
+
+/usr/share/nmap/scripts/               #script directory
+

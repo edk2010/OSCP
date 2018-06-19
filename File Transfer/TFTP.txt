@@ -1,0 +1,5 @@
+mkdir /tftp
+atftpd --demon --port 69 /tftp 
+
+
+tftp -i {Tftp server ip } {GET, PUT} {filename}

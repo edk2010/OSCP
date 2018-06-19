@@ -1,0 +1,9 @@
+nmap -sU  -p 161 {Target IP} --open
+
+snmpenum
+
+snmp-check
+
+snmpwalk -c public -v1 {Target IP}
+
+onesixtyone

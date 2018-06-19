@@ -1,0 +1,33 @@
+==================
+DirB - /usr/share/dirb/wordlists/
+wfuzz - /usr/share/wfuzz/wordlist/
+SecList - /usr/share/seclists/
+
+install them (apt-get install -y [name])
+
+======================
+
+We manually try a few default values such as:
+
+    admin \ "" (blank), admin \ admin, admin \ password
+    root \ "" (blank), root \ root, root \ password
+
+=====================
+gobuster -u http://10.11.1.71/ \
+
+nikto -host 10.11.1.44:8000 -C all
+dirb http://x.x.x.x
+
+whatweb -v 192.168.101.10
+
+wpscan -u 192.168.101.10 -e p --user-agent "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+
+curl -i http://192.168.101.10 | grep "wp-content/plugins"	# search wordpress plagins ...
+
+
+
+User-agent: Googlebot
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+
+
+

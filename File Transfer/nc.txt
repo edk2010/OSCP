@@ -1,0 +1,3 @@
+nc -nlvp 4444  > incoming.exe 
+nc -nv {Target_IP} 4444  < /usr/share/windows-binaries/wget.exe
+

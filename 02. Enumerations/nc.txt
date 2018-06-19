@@ -1,0 +1,8 @@
+##### TCP port scan##########
+nc -nvv -w 1 -z {Trget IP}  {port range}
+      [*] nc -nvv -w 1 -z 127.0.0.1 3385-3395
+
+#####UDP port scan##########
+nc -unvv -w 1 -z {Trget IP}  {port range}
+      [*] nc -unvv -w 1 -z 127.0.0.1 160-165
+

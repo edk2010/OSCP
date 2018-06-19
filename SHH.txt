@@ -1,0 +1,19 @@
+1. ===== ssh port forward ====
+ssh -D local_proxy_Port_number user@server -p ssh_port_number      #ssh port forward
+2. =====proxycains configuration=========
+
+nano /etc/proxychains.conf #default port 9050
+
+3. =====namp scan via proxychain ======
+
+proxychains nmap -n -Pn -sT -sV -p target_port target_host    # -sT only works with proxychains
+
+
+
+=========================================================
+
+
+ssh -L 8443:192.168.101.10:8443 user@host -p ssh_port_number     #map localhost port 2 remote host
+
+
+ssh -t -v -L 9050:localhost:9932 user1@host1 -p 2222 ssh -t -D 9932 user2@server2    # duble map local port 2 server2 # multi hop ssh socs proxy

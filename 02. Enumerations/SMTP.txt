@@ -1,0 +1,7 @@
+nc -nv {Target IP} 25
+VRFY bob
+
+
+
+for user in $(cat users.txt);do echo VRFY $user | nc -nv -w 1 <target ip> 25 2>/dev/null | grep ^"250";done
+

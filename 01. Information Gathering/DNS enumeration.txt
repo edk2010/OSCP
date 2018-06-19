@@ -1,0 +1,4 @@
+host -t ns domain.com
+host -t mx domain.com
+
+
