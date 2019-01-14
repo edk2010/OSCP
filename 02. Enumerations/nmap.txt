@@ -11,6 +11,7 @@ nmap -sT x.x.x.x -p80 -sV 	#banner grabbing , help identify services on specific
 nmap -sT 10.11.1.5 -p135,139,445,1025,3389 --script smb-vuln-ms08-067.nse  	#Nmap Scripting Engine (NSE)
 nmap -sT 10.11.1.5 -p135,139,445,1025,3389 --script all 						#run all relivanted scripts
 
+nmap -sS -T4 -A -sC -oA  
 
 /usr/share/nmap/scripts/               #script directory
 
