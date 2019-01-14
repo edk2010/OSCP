@@ -24,6 +24,7 @@ wpscan -u 192.168.101.10 -e p --user-agent "Mozilla/5.0 (compatible; Googlebot/2
 
 curl -i http://192.168.101.10 | grep "wp-content/plugins"	# search wordpress plagins ...
 
+curl -i http://192.168.101.10 | grep "wp-content/plugins" | awk -F'plugins' '{print $2}' | cut -d'/' -f2 | sort -u
 
 
 User-agent: Googlebot
