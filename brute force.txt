@@ -1,5 +1,7 @@
 https://habr.com/company/pentestit/blog/434216/
 
+===========imap =================
+hydra -l info@test.lab -P /usr/share/wordlists/rockyou.txt imap://192.168.101.12:8080/PLAIN
 
 ========http-post===========================
 
