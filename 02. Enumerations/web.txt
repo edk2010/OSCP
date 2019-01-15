@@ -20,6 +20,8 @@ dirb http://x.x.x.x
 
 whatweb -v 192.168.101.10
 
+wpscan --url http://site.test.lab --enumerate u --random-agent
+
 wpscan -u 192.168.101.10 -e p --user-agent "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
 
 curl -i http://192.168.101.10 | grep "wp-content/plugins"	# search wordpress plagins ...
