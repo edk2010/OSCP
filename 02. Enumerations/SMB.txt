@@ -1,4 +1,6 @@
 nmap --script smb-os-discovery.nse -p445 127.0.0.1
+nmap -sS --script smb-enum-users 172.16.0.17
+
 sudo nmap -sU -sS --script smb-os-discovery.nse -p U:137,T:139 127.0.0.1
 
 nmap -p445 --script smb-protocols <target>
@@ -7,8 +9,8 @@ nmap -p139 --script smb-protocols <target>
 nmap --script smb-system-info.nse -p445 <host>
 sudo nmap -sU -sS --script smb-system-info.nse -p U:137,T:139 <host>
 
-nmap –script smb-enum-shares.nse –script-args=unsafe=1 -p445 [host]
-nmap –script smb-enum-users.nse –script-args=unsafe=1 -p445 [host]
+nmap â€“script smb-enum-shares.nse â€“script-args=unsafe=1 -p445 [host]
+nmap â€“script smb-enum-users.nse â€“script-args=unsafe=1 -p445 [host]
 
 
 
