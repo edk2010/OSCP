@@ -1,4 +1,7 @@
 dnsrecon    # kali linux tool
+
+dnsrecon -a -d test.lab -n 172.16.2.10  # -a Perform AXFR with standard enumeration -d domain -n dns
+
 dnsenum    # kali linux tool
 
 
