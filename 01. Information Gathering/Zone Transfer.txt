@@ -4,7 +4,7 @@ dnsrecon -a -d test.lab -n 172.16.2.10  # -a Perform AXFR with standard enumerat
 
 dnsenum    # kali linux tool
 
-dig axfr <subdomain>@10.10.10.123
+dig axfr <subdomain> @10.10.10.123
 
 
 
