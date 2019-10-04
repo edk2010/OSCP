@@ -1,6 +1,8 @@
 ==================
 DirB - /usr/share/dirb/wordlists/
 wfuzz - /usr/share/wfuzz/wordlist/
+wfuzz -c -z file,big.txt --hc 404 http://site.com/FUZZ
+
 SecList - /usr/share/seclists/
 
 install it (apt-get install -y [name])
