@@ -3,7 +3,7 @@ DirB - /usr/share/dirb/wordlists/
 wfuzz - /usr/share/wfuzz/wordlist/
 SecList - /usr/share/seclists/
 
-install them (apt-get install -y [name])
+install it (apt-get install -y [name])
 
 ======================
 
