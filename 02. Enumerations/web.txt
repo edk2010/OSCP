@@ -2,7 +2,8 @@
 DirB - /usr/share/dirb/wordlists/
 wfuzz - /usr/share/wfuzz/wordlist/
 wfuzz -c -z file,big.txt --hc 404 http://site.com/FUZZ
-
+wfuzz Multiple payloads
+wfuzz -w wordlist/general/common.txt -w wordlist/general/common.txt -w wordlist/general/extensions_common.txt --hc 404 http://testphp.vulnweb.com/FUZZ/FUZ2ZFUZ3Z
 SecList - /usr/share/seclists/
 
 install it (apt-get install -y [name])
