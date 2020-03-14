@@ -1,3 +1,4 @@
+/robots.txt
 ==================
 DirB - /usr/share/dirb/wordlists/
 wfuzz - /usr/share/wfuzz/wordlist/
